@@ -5,10 +5,12 @@ import com.example.EmployeeManagement.model.Employee;
 import com.example.EmployeeManagement.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.UUID;
 
+@Transactional
 @Service
 public class EmployeeService {
 
